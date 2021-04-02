@@ -1,6 +1,38 @@
 .Slide {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
-    font-size: 5ems;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    position: absolute;
+    left: 0;;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.hidden-left {
+    left: -110vw;
+    transform: rotate(-3deg);
+}
+
+.hidden-right {
+    left: 110vw;
+    transform: rotate(3deg);
+}
+
+.hidden-top {
+    top: -110vh;
+    transform: rotate(3deg);
+}
+
+.shown {
+    top: 0;
+    left: 0;
 }
